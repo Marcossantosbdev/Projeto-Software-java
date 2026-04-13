@@ -59,7 +59,7 @@ public class Main {
                 case "4"-> {
                     System.out.println("REMOÇÃO DE PRODUTOS\nAQUI ESTÁ A LISTA DE PRODUTOS");
                     listaProdutos.listarProdutos();
-                    
+
                     System.out.println("Digite o ID do produto: ");
                     int idProduto = sc.nextInt();
                     sc.nextLine();
