@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/roupa")
 
-public class ControllerProduto {
+public class  ControllerProduto {
     @PostMapping
     public void cadastrarProduto (@RequestBody String produto){
         System.out.println(produto);
