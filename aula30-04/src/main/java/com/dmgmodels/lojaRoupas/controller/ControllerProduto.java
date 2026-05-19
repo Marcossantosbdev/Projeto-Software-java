@@ -22,6 +22,7 @@ public class  ControllerProduto {
         roupaRepository.save(new Roupa(dados));
     }
 
+    //Busca
     @GetMapping
     public List<Roupa> listarProdutos() {
         return roupaRepository.findAll();
@@ -33,12 +34,14 @@ public class  ControllerProduto {
         return roupaRepository.findByNomeProduto(nomeProduto);
     }
 
+    //Delete
     @DeleteMapping ("/{id}")
     @Transactional
     public void deletarProduto(@PathVariable Long id) {
         roupaRepository.deleteById(id);
     }
 
+    //Atualizar
     @PutMapping
     @Transactional
     public void atualizarProduto(@RequestBody DadosAtualizarRoupa novosDados) {
